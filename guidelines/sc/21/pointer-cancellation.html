@@ -1,28 +1,28 @@
 <section id="pointer-cancellation" class="sc">
-   					
-   <h4>Pointer Cancellation</h4>
-   					
+            
+   <h4>Cancelamento do Ponteiro</h4>
+            
    <p class="conformance-level">A</p>
-   					
-   <p>For <a>functionality</a> that can be operated using a <a>single pointer</a>, at least one of the following is true:</p>
-   					
+            
+   <p>Para <a>funcionalidades</a> que possam ser operadas utilizando um <a>único ponteiro</a>, pelo menos uma das seguintes condições é verdadeira:</p>
+            
    <dl>
    
-   <dt>No Down-Event</dt>
-     <dd>The <a>down-event</a> of the pointer is not used to execute any part of the function;</dd>
-      						
-   <dt>Abort or Undo</dt>
-     <dd>Completion of the function is on the <a>up-event</a>, and a <a>mechanism</a> is available to abort the function before completion or to undo the function after completion;</dd>
-      						
-   <dt>Up Reversal</dt>
-     <dd>The up-event reverses any outcome of the preceding down-event;</dd>
-      						
-   <dt>Essential</dt>
-     <dd>Completing the function on the down-event is <a>essential</a>.</dd>
-      						
+   <dt>Sem Evento de Pressão</dt>
+     <dd>O <a>evento de pressão</a> do ponteiro não é utilizado para executar qualquer parte da função;</dd>
+                  
+   <dt>Abortar ou Anular</dt>
+     <dd>A conclusão da função ocorre no <a>evento de libertação</a>, e existe um <a>mecanismo</a> disponível para abortar a função antes da conclusão ou anular a função após a conclusão;</dd>
+                  
+   <dt>Reversão na Libertação</dt>
+     <dd>O evento de libertação reverte qualquer resultado do evento de pressão anterior;</dd>
+                  
+   <dt>Essencial</dt>
+     <dd>Concluir a função no evento de pressão é <a>essencial</a>.</dd>
+                  
    </dl>
-   <p class="note">Functions that emulate a keyboard or numeric keypad key press are considered essential.</p>
-   					
-  <p class="note">This requirement applies to web content that interprets pointer actions (i.e., this does not apply to actions that are required to operate the user agent or assistive technology).</p>
-	
+   <p class="note">As funções que emulam a pressão de uma tecla de teclado ou de teclado numérico são consideradas essenciais.</p>
+            
+  <p class="note">Este requisito aplica-se a conteúdo Web que interpreta ações do ponteiro (ou seja, não se aplica a ações necessárias para operar o agente de utilizador ou a tecnologia de apoio).</p>
+  
 </section>
