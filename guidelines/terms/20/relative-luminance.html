@@ -1,29 +1,28 @@
-<dt><dfn id="dfn-relative-luminance">relative luminance</dfn></dt>
+<dt><dfn id="dfn-relative-luminance">luminância relativa</dfn></dt>
 <dd>
    
-   <p>the relative brightness of any point in a colorspace, normalized to 0 for darkest
-      black and 1 for lightest white
+   <p>o brilho relativo de qualquer ponto num espaço de cor, normalizado para 0 no preto mais escuro e 1 no branco mais claro
    </p>
    
   <div class="note">
-   <p>For the sRGB colorspace, the relative luminance of a color is defined as L = 0.2126
-      * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> where <strong>R</strong>, <strong>G</strong> and <strong>B</strong> are defined as:
+   <p>Para o espaço de cor sRGB, a luminância relativa de uma cor é definida como L = 0.2126
+      * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> em que <strong>R</strong>, <strong>G</strong> e <strong>B</strong> são definidos como:
    </p>
    
    <ul>
       
-      <li>if RsRGB &lt;= 0.04045 then <strong>R</strong> = RsRGB/12.92 else <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
+      <li>se RsRGB &lt;= 0.04045 então <strong>R</strong> = RsRGB/12.92 senão <strong>R</strong> = ((RsRGB+0.055)/1.055) ^ 2.4
       </li>
       
-      <li>if GsRGB &lt;= 0.04045 then <strong>G</strong> = GsRGB/12.92 else <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
+      <li>se GsRGB &lt;= 0.04045 então <strong>G</strong> = GsRGB/12.92 senão <strong>G</strong> = ((GsRGB+0.055)/1.055) ^ 2.4
       </li>
       
-      <li>if BsRGB &lt;= 0.04045 then <strong>B</strong> = BsRGB/12.92 else <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
+      <li>se BsRGB &lt;= 0.04045 então <strong>B</strong> = BsRGB/12.92 senão <strong>B</strong> = ((BsRGB+0.055)/1.055) ^ 2.4
       </li>
       
    </ul>
    
-   <p>and RsRGB, GsRGB, and BsRGB are defined as:</p>
+   <p>e RsRGB, GsRGB e BsRGB são definidos como:</p>
    
    <ul>
       
@@ -35,29 +34,24 @@
       
    </ul>
    
-   <p>The "^" character is the exponentiation operator. (Formula taken from 
+   <p>O carácter "^" representa o operador de exponenciação. (Fórmula retirada de 
       [[SRGB]].)
    </p>
 
   </div>
 
-  <p class="note">Before May 2021 the value of 0.04045 in the definition was different (0.03928). It was taken from an older version of the specification and has been updated. It has no practical effect on the calculations in the context of these guidelines.</p>
+  <p class="note">Antes de maio de 2021, o valor de 0.04045 na definição era diferente (0.03928). Foi retirado de uma versão anterior da especificação e foi atualizado. Não tem efeito prático nos cálculos no contexto destas diretrizes.</p>
   
-   <p class="note">Almost all systems used today to view web content assume sRGB encoding. Unless it
-      is known that another color space will be used to process and display the content,
-      authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Understanding Success Criterion 1.4.3</a>.
+   <p class="note">Quase todos os sistemas atualmente utilizados para visualizar conteúdo Web assumem codificação sRGB. A menos que se saiba que outro espaço de cor será utilizado para processar e apresentar o conteúdo, os autores devem avaliar utilizando o espaço de cor sRGB. Se forem utilizados outros espaços de cor, consulte <a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">Understanding Success Criterion 1.4.3</a>.
    </p>
    
-   <p class="note">If dithering occurs after delivery, then the source color value is used. For colors
-      that are dithered at the source, the average values of the colors that are dithered
-      should be used (average R, average G, and average B).
+   <p class="note">Se ocorrer dithering após a disponibilização, então é utilizado o valor da cor de origem. Para cores sujeitas a dithering na origem, devem ser utilizados os valores médios das cores sujeitas a dithering (média de R, média de G e média de B).
    </p>
    
-   <p class="note">Tools are available that automatically do the calculations when testing contrast and
-      flash.
+   <p class="note">Existem ferramentas disponíveis que efetuam automaticamente os cálculos ao testar contraste e flashes.
    </p>
    
-   <p class="note">A <a href="relative-luminance.html">separate page giving the relative luminance definition using MathML</a> to display the formulas is available.
+   <p class="note">Está disponível uma <a href="relative-luminance.html">página separada com a definição de luminância relativa utilizando MathML</a> para apresentar as fórmulas.
    </p>
    
 </dd>
