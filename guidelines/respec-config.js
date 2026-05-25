@@ -17,6 +17,13 @@ var respecConfig = {
     // language of the document: pt-PT
     lang: "pt-PT",
 
+    // strings to overwrite
+
+    l10n: {
+    abstract: "Resumo",
+    sotd: "Estado deste documento",
+  }
+
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
 	shortName:            "WCAG22",
 	
