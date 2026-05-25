@@ -15,7 +15,7 @@ var respecConfig = {
 	diffTool:             "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
 	
     // language of the document: pt-PT
-    lang: "pt-PT",
+    lang: "pt",
 
     // strings to overwrite
 
