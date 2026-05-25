@@ -14,16 +14,7 @@ var respecConfig = {
 	publishDate:          "2024-12-12",
 	diffTool:             "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
 	
-    // language of the document: pt-PT
-    lang: "pt-PT",
-
-    // strings to overwrite
-
-    l10n: {
-          abstract: "Resumo",
-          sotd: "Estado deste documento",
-    },
-
+    
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
 	shortName:            "WCAG22",
 	
