@@ -5,16 +5,16 @@
   {% assign understandingActRulesHref = "understanding-act-rules.html" %}
 {%- endif -%}
 <section id="test-rules">
-  <h2>Test Rules</h2>
+  <h2>Regras de Teste</h2>
   <p>
-    The following are Test Rules
+    A seguir estão as Regras de Teste
     {% if isTechniques -%}
-      related to this Technique.
+      relacionado com esta Técnica.
     {%- elsif isUnderstanding -%}
-      for certain aspects of this Success Criterion.
+      para alguns aspetos deste Critério de Sucesso.
     {%- endif %}
-    It is not necessary to use these particular Test Rules to check for conformance with WCAG, but they are defined and approved test methods.
-    For information on using Test Rules, see <a href="{{ understandingActRulesHref }}">Understanding Test Rules for WCAG Success Criteria</a>.
+    Não é necessário usar estas Regras de Teste em particular para verificar conformidade com as WCAG, mas elas são métodos de teste definidos e aprovados.
+    Para obter informação sobre a utilização das Regras de Teste, consulte <a href="{{ understandingActRulesHref }}">Compreender as Regras de Teste para os Critérios de Sucesso WCAG</a>.
   </p>
   <ul>
   {% for rule in testRules %}

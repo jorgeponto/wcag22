@@ -3,18 +3,18 @@ Expected inputs from directory data for techniques and understanding:
 headerUrl and headerLabel (set in both folders)
 isUnderstanding and isTechniques (each set to true in respective folder)
 {% endcomment %}
-<a href="#main" class="button button--skip-link">Skip to content</a>
+<a href="#main" class="button button--skip-link">Saltar para conteúdo</a>
 <div class="minimal-header-container default-grid">
   <header class="minimal-header" id="site-header">
     <div class="minimal-header-name">
       <a href="{{ headerUrl }}">WCAG {{ versionDecimal }} {{ headerLabel }}</a>
     </div>
     {% if isTechniques %}
-      <div class="minimal-header-subtitle">Examples of ways to meet WCAG; not required</div>
+      <div class="minimal-header-subtitle">Exemplos de formas de satifazer as WCAG; não é obrigatório</div>
     {% elsif isUnderstanding %}
-      <div class="minimal-header-subtitle">Informative explanations, not required to meet WCAG</div>
+      <div class="minimal-header-subtitle">Explicações informativas, não é obritatório para satisfazer as WCAG</div>
     {% endif %}
-    <a class="minimal-header-link" href="{{ headerUrl }}about">About WCAG {{ headerLabel }}</a>
+    <a class="minimal-header-link" href="{{ headerUrl }}about">Sobre as WCAG {{ headerLabel }}</a>
     <div class="minimal-header-logo">
       <a href="http://w3.org/" aria-label="W3C">
         <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 91.968 44">
