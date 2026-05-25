@@ -22,7 +22,7 @@ var respecConfig = {
     l10n: {
     abstract: "Resumo",
     sotd: "Estado deste documento",
-  }
+  },
 
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
 	shortName:            "WCAG22",
